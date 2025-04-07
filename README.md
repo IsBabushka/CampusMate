@@ -1,5 +1,7 @@
 # CampusMate
 
+#### Video Demo: [Campus Mate | CS50x Final Project](https://youtu.be/xNiaF0I_n5w)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
