@@ -37,9 +37,7 @@ The project is structured to maintain clarity and ease of navigation:
 
 -   `src/MyApps`: Contains the main application classes and forms.
 -   `src/MyLibs`: Houses utility classes and data access objects.
--   `resources`: Stores images, icons, and other resources used in the application.
--   `db`: Contains SQL scripts for database setup and schema creation.
--   `docs`: Documentation and user guides.
+-   `src/Icons`: Stores icons used in the application.
 
 ## Installation
 
