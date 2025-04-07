@@ -289,7 +289,7 @@ public class StudentDashboard extends javax.swing.JFrame {
         headerText.setBackground(new java.awt.Color(67, 67, 67));
         headerText.setFont(new java.awt.Font("Helvetica", 1, 36)); // NOI18N
         headerText.setForeground(new java.awt.Color(67, 67, 67));
-        headerText.setText("Dashboard");
+        headerText.setText("Courses");
 
         fullnameText.setBackground(new java.awt.Color(67, 67, 67));
         fullnameText.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N
@@ -711,7 +711,7 @@ public class StudentDashboard extends javax.swing.JFrame {
         editMyProfileText.setForeground(new java.awt.Color(112, 110, 110));
         
         // headertext changes to Dashboard
-        headerText.setText("Course Selection");
+        headerText.setText("Courses");
 
         // change index of selected tab to 0
         jTabbedPane1.setSelectedIndex(0);
@@ -740,7 +740,7 @@ public class StudentDashboard extends javax.swing.JFrame {
         tasksText.setForeground(new java.awt.Color(112, 110, 110));
         
         // headertext changes to Manage Teachers
-        headerText.setText("Tasks");
+        headerText.setText("Edit my Profile");
 
         // switch to manage teachers panel
         jTabbedPane1.setSelectedIndex(2);
@@ -764,7 +764,7 @@ public class StudentDashboard extends javax.swing.JFrame {
         editMyProfileText.setForeground(new java.awt.Color(112, 110, 110));
 
         // headertext changes to Manage Students
-        headerText.setText("Attendance");
+        headerText.setText("Tasks");
 
         // switch to manage students panel
         jTabbedPane1.setSelectedIndex(1);
