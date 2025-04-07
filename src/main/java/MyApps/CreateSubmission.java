@@ -71,7 +71,8 @@ public class CreateSubmission extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         taskTitleText = new javax.swing.JLabel();
-        taskPromptArea = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        taskPromptArea = new javax.swing.JTextArea();
         submissionTitleHeader = new javax.swing.JLabel();
         submissionContentHeader = new javax.swing.JLabel();
         submissionTitle = new javax.swing.JTextField();
@@ -82,7 +83,7 @@ public class CreateSubmission extends javax.swing.JFrame {
         saveButton = new javax.swing.JPanel();
         saveText = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(700, 600));
         setResizable(false);
 
@@ -95,10 +96,13 @@ public class CreateSubmission extends javax.swing.JFrame {
         taskTitleText.setForeground(new java.awt.Color(67, 67, 67));
         taskTitleText.setText("Task Title");
 
-        taskPromptArea.setFont(new java.awt.Font("Helvetica", 0, 14)); // NOI18N
+        taskPromptArea.setEditable(false);
+        taskPromptArea.setBackground(new java.awt.Color(255, 255, 255));
+        taskPromptArea.setColumns(20);
         taskPromptArea.setForeground(new java.awt.Color(67, 67, 67));
-        taskPromptArea.setText("Task Prompt");
-        taskPromptArea.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        taskPromptArea.setLineWrap(true);
+        taskPromptArea.setRows(5);
+        jScrollPane2.setViewportView(taskPromptArea);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -107,7 +111,7 @@ public class CreateSubmission extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(taskPromptArea, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2)
                     .addComponent(taskTitleText, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -116,9 +120,9 @@ public class CreateSubmission extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(taskTitleText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(taskPromptArea, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         submissionTitleHeader.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N
@@ -230,7 +234,7 @@ public class CreateSubmission extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(submissionContentHeader)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 372, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(saveButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -324,13 +328,14 @@ public class CreateSubmission extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JPanel saveButton;
     private javax.swing.JLabel saveText;
     private javax.swing.JTextArea submissionContent;
     private javax.swing.JLabel submissionContentHeader;
     private javax.swing.JTextField submissionTitle;
     private javax.swing.JLabel submissionTitleHeader;
-    private javax.swing.JLabel taskPromptArea;
+    private javax.swing.JTextArea taskPromptArea;
     private javax.swing.JLabel taskTitleText;
     // End of variables declaration//GEN-END:variables
 }
