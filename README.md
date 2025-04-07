@@ -38,6 +38,7 @@ The project is structured to maintain clarity and ease of navigation:
 -   `src/MyApps`: Contains the main application classes and forms.
 -   `src/MyLibs`: Houses utility classes and data access objects.
 -   `src/Icons`: Stores icons used in the application.
+-   `db`: Contains SQL script for schema creation.
 
 ## Installation
 
@@ -47,7 +48,7 @@ To install and run CampusMate, follow these steps:
 
 -   Ensure you have Java Development Kit (JDK) installed.
 -   Install MySQL and set up a database.
--   Install an IDE like IntelliJ IDEA or Eclipse.
+-   Install an IDE like IntelliJ IDEA, Eclipse, or Apache NetBeans.
 
 ### Clone the Repository
 
