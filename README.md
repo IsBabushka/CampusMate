@@ -52,7 +52,7 @@ To install and run CampusMate, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/CampusMate.git  
+git clone https://github.com/IsBabushka/CampusMate.git  
 cd CampusMate
 ```
 
